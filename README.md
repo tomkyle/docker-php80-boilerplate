@@ -35,10 +35,10 @@ localhost 127.0.0.1 ::1
 Use this section to build a Docker image. The image is also available on https://hub.docker.com/repository/docker/tomkyle/php74
 
 ```bash
-$ docker image build -t php80 .
+$ docker image build -t tomkyle/php80 .
 ```
 
-Assuming you don’t have errors, a new Docker image will be built. Run `docker image ls` to see `php74` in the list of images.
+Assuming you don’t have errors, a new Docker image will be built. Run `docker image ls` to see `php80` in the list of images.
 
 ```bash
 $ docker image ls

@@ -9,8 +9,8 @@
 Clone repo and dive into project directory:
 
 ```bash 
-$ gh repo clone tomkyle/docker-php74-boilerplate docker-php74
-$ cd docker-php74
+$ gh repo clone tomkyle/docker-php80-boilerplate docker-php80
+$ cd docker-php80
 ```
 
 Install [**mkcert**](https://github.com/FiloSottile/mkcert), a simple tool for making locally-trusted development certificates. 
@@ -25,8 +25,8 @@ Make sure to keep the cert file names as seen here as they are copied to the Doc
 
 ```bash
 $ mkcert \
--key-file localhost-php74-key.pem \
--cert-file localhost-php74.pem \
+-key-file localhost-php80-key.pem \
+-cert-file localhost-php80.pem \
 localhost 127.0.0.1 ::1
 ```
 
@@ -35,7 +35,7 @@ localhost 127.0.0.1 ::1
 Use this section to build a Docker image. The image is also available on https://hub.docker.com/repository/docker/tomkyle/php74
 
 ```bash
-$ docker image build -t php74 .
+$ docker image build -t php80 .
 ```
 
 Assuming you don’t have errors, a new Docker image will be built. Run `docker image ls` to see `php74` in the list of images.
@@ -57,7 +57,7 @@ services:
     container_name: app
 
     # The image from above Dockerfile
-    image: php74
+    image: tomkyle/php80
 
     # Assume "htdocs" being the public folder
     # which itself is a sub-directory of the project root

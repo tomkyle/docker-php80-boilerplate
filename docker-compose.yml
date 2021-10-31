@@ -5,8 +5,8 @@ services:
     container_name: app
 
     # Change this image name to your needs
-    # or use the public one from https://hub.docker.com/r/tomkyle/php74
-    image: tomkyle/php74
+    # or use the public one from https://hub.docker.com/r/tomkyle/php80
+    image: tomkyle/php80
 
     # Adapt these
     volumes:

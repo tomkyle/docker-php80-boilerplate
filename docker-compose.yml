@@ -1,0 +1,18 @@
+version: '3'
+services:
+
+  app:
+    container_name: app
+
+    # Change this image name to your needs
+    # or use the public one from https://hub.docker.com/r/tomkyle/php74
+    image: tomkyle/php74
+
+    # Adapt these
+    volumes:
+      - ./:/var/www
+      - ./htdocs/:/var/www/html
+
+    ports:
+      - "8080:80"
+      - "443:443"
